@@ -1,0 +1,9 @@
+Heal the Sick
+=============
+
+1) let area x = 3.14 * (x * x)
+2) let double x = x * 2
+3) f =
+   let x = 7
+       y = 10
+   in x + y

@@ -1,0 +1,12 @@
+Comprehension Check
+==================
+
+1) half = (\x -> x / 2)
+2) areaOfCircle = (\x -> 3.14 * (x * 2))
+3) areaOfCircle' = (\x -> pi * (x * 2))
+
+(Using let)
+
+1) let half x = x / 2 
+2) let areaOfCircle x = 3.14 * (x * 2)
+3) let areaOfCircle' x = pi * (x * 2)
