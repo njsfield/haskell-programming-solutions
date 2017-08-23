@@ -1,0 +1,11 @@
+Intermission: Equivalence Exercises
+===================================
+
+1. λxy.xy
+  b) λmn.mz
+
+2. λxy.xxy
+  c) λa(λb.aab)
+
+3. λxyz.zx
+  b) λtos.st
