@@ -1,0 +1,12 @@
+Type Arguments
+==============
+
+1. a) Char -> Char -> Char
+2. d) Char
+3. b) Num b => b 
+4. c) Double
+5. a) [Char]
+6. d) Eq => b -> [Char]
+7. b) (Num a, Ord a) => a
+8. a) (Num a, Ord a) => a
+9. c) Integer

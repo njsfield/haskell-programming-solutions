@@ -1,0 +1,18 @@
+Parametricity
+=============
+
+1. We can only use 1 implementation
+  bang :: a -> a 
+  bang a = not a (bottom...)
+
+2. We can only use 2 implementations
+  pp :: a -> a -> a
+  pp a b = a
+  pp a b = b
+  pp a b = not a (bottom...)
+
+3. We can only use 1 implememtation 
+  pp' :: a -> b -> b
+  pp' a b = b
+  Behaviour can change only is constraints are
+  implemented
