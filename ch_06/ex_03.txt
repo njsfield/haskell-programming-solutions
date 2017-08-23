@@ -1,0 +1,23 @@
+Will They Work? 
+===============
+
+1. max (length [1, 2, 3]) (length [8, 9, 10, 11, 12])
+   - Will work
+   - Returns 5 
+   - max type signature specifies two arguments that implement Ord (length returns Int- which has instance of Ord)
+
+2. compare (3 * 4) (3 * 5)
+   - Will work
+   - Returns LT
+   - compare expects two arguments that implement Ord (* returns Int- which has instance of Ord) 
+
+3. compare "Julie" True
+   - Breaks
+   - compare expects arguments to implement one type of Ord.
+   - Mixed types throws error
+
+4. (5 + 3) > (3 + 6)
+   - Works
+   - Both expressions return Int values, Int has typeclass instance for (>)
+
+

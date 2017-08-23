@@ -1,0 +1,13 @@
+Tuple Experiment
+================
+
+quotRem - Return tuple containing the quot result & rem result of two Integral numbers
+
+divMod - Return tuple containing the div result & mod result of two Integral numbers
+
+let ones x = snd (divMod x 10)
+
+ones 0  == 0
+ones 11 == 1
+ones 23 == 3
+ones 40 == 0
