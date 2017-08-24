@@ -1,0 +1,18 @@
+Variety Pack
+============
+
+1) 
+
+  k (x, y) = x
+  k1 = k ((4-1), 10)
+  k2 = k ("three", (1 + 2))
+  k3 = k (3, True) 
+
+  a) k  :: (x, y) -> x
+  b) k2 :: [Char]    (not the same as k1/k3)
+  c) All three will return 3, though k2 will return string of "three"
+
+2) 
+
+  f :: (a, b, c) -> (d, e, f) -> ((a, d), (c, f))
+  f (a, b, c) (d, e, f) = ((a, d), (c, f))

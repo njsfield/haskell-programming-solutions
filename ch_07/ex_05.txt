@@ -1,0 +1,46 @@
+Guard Duty
+==========
+
+1) 
+
+  avgGrade :: (Fractional a, Ord a) => a -> Char
+  avgGrade x
+    | otherwise = 'F'
+    | y >= 0.9  = 'A'
+    | y >= 0.8  = 'B'
+    | y >= 0.7  = 'C'
+    | y >= 0.59 = 'D'
+    where y = x / 100
+
+  avgGrade 90 == 'F'
+  avgGrade 75 == 'F'
+  avgGrade 60 == 'F'
+  avgGrade 0  == 'F'
+
+
+2) (y >= 0.7 re-ordered) - doesn't work the same
+
+  avgGrade :: (Fractional a, Ord a) => a -> Char
+  avgGrade x
+    | y >= 0.9  = 'A'
+    | y >= 0.8  = 'B'
+    | y >= 0.59 = 'D'
+    | y >= 0.7  = 'C'
+    | y < 0.59  = 'F'
+    where y = x / 100
+
+  avgGrade 90 == 90
+  avgGrade 71 == 'D' (previous 'C')
+
+3) b) True when xs is a palindrome
+
+4) pal can take any list with arguments that have an instace of Eq
+
+5) pal :: Eq a => [a] -> Bool
+
+6) c) an indication of whether its argument is a positive or 
+     negative number or zero
+
+7) Arguments can be type (Num a, Ord a) => a
+
+8) numbers :: (Num a, Ord a, Num b) => a -> b 
