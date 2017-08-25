@@ -1,0 +1,51 @@
+More Bottoms
+============
+
+
+1) take 1 $ map (+1) [undefined, 2, 3]
+  = ⊥
+
+2) take 1 $ map (+1) [1, undefined, 3]
+  = [1]
+
+3) take 2 $ map (+1) [1, undefined, 3]
+  = ⊥
+
+4) isItMystery xs = map (\x -> elem x "aeiou") xs
+
+   isItMystery :: [Char] -> [Bool]
+
+   Applies a function (A) to each Char in a String,
+   (A) applies elem (a -> [a] -> Bool) to a Char and a String of vowels
+   to reduce to a Bool (True / False)
+
+5) 
+  a) map (^2) [1..10]
+     [1, 4, 9, 16, 25, 36, 49, 84, 81, 100]
+
+  b) map minimum [[1..10], [10..20], [20..30]]
+     [1,2,3,4,5,6,7,8,9,10]
+
+     minimum :: (Ord a, Foldable t) => ta -> a
+
+   c) map sum [[1..5], [1..5], [1..5]]
+     [15, 15, 15]
+
+     sum :: (Num a, Foldable t) => t a -> a
+
+6) 
+    bool :: a -> a -> Bool -> a
+    
+    If-then-else
+    ------------
+
+    map (\x -> if x == 3 then (-x) else (x)) [1..10]
+      = [1,2,-3,4,5,6,7,8,9,10]
+
+    bool
+    ----
+    map (\x -> bool x (-x) (x == 3)) [1..10]
+      = [1,2,-3,4,5,6,7,8,9,10]
+
+
+
