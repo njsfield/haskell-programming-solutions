@@ -1,0 +1,17 @@
+For Example
+===========
+
+data Example = MakeExample deriving Show
+
+1) MakeExample :: Example
+   Scope error when requesting type of Example
+
+2) :info Example
+
+   data Example = MakeExample
+   instance [safe] Show Example
+
+3) data Example' = MakeExample' Int deriving Show
+  
+   MakeExample' :: Int -> Example'
+

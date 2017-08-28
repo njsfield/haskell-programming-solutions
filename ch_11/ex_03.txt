@@ -1,0 +1,45 @@
+Cardinality
+===========
+
+1) data PugType = PugData
+
+   - cardinality of 1
+
+2) data Airline =
+      PapuAir
+    | CatapulsR'Us
+    | TakeYourChancesUnited 
+
+   - cardinality of 3
+
+3) Int16
+  
+     minBound :: Int16 (-32768)
+     maxBound :: Int16 (32767)
+  
+     32768 + 32767 + 1
+     = 65536 (cardinality)
+
+4) Integer
+
+    minBound :: Int (-9223372036854775808)
+    maxBound :: Int (9223372036854775807)
+
+    9223372036854775808 + 9223372036854775807 + 1
+    = 18446744073709551616 (cardinality)
+
+    minBound :: Int (No instance for (Bounded Integer))
+    maxBound :: Int (No instance for (Bounded Integer))
+
+    Integer is not bounded as it can be infinite
+
+5) 8 in Int8 (256) =
+    
+    2 ^ 8 = 256 
+
+   16 in Int16 (65536)
+
+    2 ^ 16 = 65536
+    
+
+

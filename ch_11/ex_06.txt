@@ -1,0 +1,21 @@
+Pity the Bool
+=============
+
+1)
+
+data BigSmall =
+    Big Bool
+  | Small Bool  
+  deriving (Eq, Show)
+
+cardinality = 2 (Bool) + 2 (Bool) = 4
+
+2)
+
+data NumberOrBool =
+    Numba Int8
+  | BoolyBool Bool
+  deriving (Eq, Show)
+
+cardinality = 256 (Int8) + 2 (Bool) = 258
+
