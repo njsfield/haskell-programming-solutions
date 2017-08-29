@@ -61,6 +61,14 @@ cipher m@(' ':ms) k        = ' ' : cipher ms k
 cipher m@(mh:ms)  k@(kh:ks) = res : cipher ms (ks ++ [kh])
     where res = transposed (toUpper mh) (toUpper kh)
 
+userVig :: IO String
+userVig = do
+  putStrLn "Please enter a message and press enter: "
+  word <- getLine
+  putStrLn "Now enter a keyword to transpose your message with: "
+  word' <- getLine
+  return (cipher word word')
+
 {-
  - As-patterns
  -}
