@@ -1,0 +1,39 @@
+
+==================== FINAL INTERFACE ====================
+2017-08-31 08:29:55.980363 UTC
+
+interface chex-0.1.0.0-3ffakbQJVgJKCCI1eMpSOv:Lib 8002
+  interface hash: e4d9c35eca2a7952613b00420d49097c
+  ABI hash: a1ac49d376a95a9bc86b5adadad36cef
+  export-list hash: 2e5c6b5ff67b137a192a76a679fd5f76
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.someFunc
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.IO c9de64c5f5407c4cf1c52500c4d15200
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+c6b4f70f25fe9cc0a3b159b04e1f0ce9
+  $trModule :: GHC.Types.Module
+32380dc838a2e20104a6dcd7b35d9ffd
+  someFunc :: GHC.Types.IO ()
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

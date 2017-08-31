@@ -1,0 +1,63 @@
+
+==================== FINAL INTERFACE ====================
+2017-08-30 14:55:55.037871 UTC
+
+interface morse-0.1.0.0-EoGXyWdC3F14WkTSMAgy15:Morse 8002
+  interface hash: 316b1f5fd08f875aa9f74d2c22b477f8
+  ABI hash: 61a31aa3c446505393077ad6be6e2ba1
+  export-list hash: b114804ee069f173ba60f75e86c0707d
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Morse.charToMorse
+  Morse.letterToMorse
+  Morse.morseToChar
+  Morse.morseToLetter
+  Morse.stringToMorse
+  Morse.Morse
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+import  -/  base-4.9.1.0:Data.Traversable 556020d7cf3c4a34a774600512918a37
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map 0fd5c8559af8bc4b6f38b9cf9ba5a467
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base 8b155a212edaca6c85bcefe65a8bc505
+1d5809f958adbd787b99f801fba9bd08
+  $trModule :: GHC.Types.Module
+7f86d92d6b3f88ba51846420dc338dd0
+  type Morse = GHC.Base.String
+e5ff50d7b2f37b37338fa7a34854eb99
+  charToMorse :: GHC.Types.Char -> GHC.Base.Maybe Morse.Morse
+81b5528e6d1d33687b09bb0af49fdb05
+  letterToMorse :: Data.Map.Base.Map GHC.Types.Char Morse.Morse
+8e28e065af22ad1dcaea4af196d089e3
+  morseToChar :: Morse.Morse -> GHC.Base.Maybe GHC.Types.Char
+170094752452cb61d720a99618258481
+  morseToLetter :: Data.Map.Base.Map Morse.Morse GHC.Types.Char
+7d59f7ad943005a0b152be29225eab65
+  stringToMorse :: GHC.Base.String -> GHC.Base.Maybe [Morse.Morse]
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

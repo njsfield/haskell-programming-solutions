@@ -1,0 +1,127 @@
+
+==================== FINAL INTERFACE ====================
+2017-08-31 14:21:33.166361 UTC
+
+interface chex-0.1.0.0-KgUEtLxuEyGCiEynp3TqoJ:Generators 8002
+  interface hash: 24a02e996446d4a29a1cdad574dbd21b
+  ABI hash: c60aaf5796122ec16fc4ffe09d27761b
+  export-list hash: 8b512357f2e756f1285b72503a60227b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Generators.main
+  Generators.run_fool
+  Generators.run_fool'
+  Generators.Fool{Generators.Frue Generators.Fulse}
+  Generators.Fool'{Generators.Frue' Generators.Fulse'}
+module dependencies:
+package dependencies: QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-boot-th-8.0.2@ghc-boot-th-8.0.2
+                      ghc-prim-0.5.0.0 integer-gmp-1.0.0.1 pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      template-haskell-2.11.1.0
+                      tf-random-0.5@tf-random-0.5-CJZw1ZWS5MOJlR60HqKEZL
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+import  -/  QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu:Test.QuickCheck 7a1791e2e66f06ce3b95a443f0d4b1ed
+import  -/  QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu:Test.QuickCheck.Arbitrary 7186418da62e356916f17711482dca2f
+import  -/  QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu:Test.QuickCheck.Gen 8c21a18006b7ca28eeb63c6653bc55ab
+import  -/  QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu:Test.QuickCheck.Property bd762cb5d720f27df7b65592b0e656e1
+import  -/  QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu:Test.QuickCheck.Test af729ecd962d539009b6dff25903d6d1
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+1eab18b03bca753f033f80866245c5fd
+  $fArbitraryFool ::
+    Test.QuickCheck.Arbitrary.Arbitrary Generators.Fool
+  DFunId
+8c6449be3fc5a14bb6c84c49f94facb5
+  $fArbitraryFool' ::
+    Test.QuickCheck.Arbitrary.Arbitrary Generators.Fool'
+  DFunId
+1eab18b03bca753f033f80866245c5fd
+  $fEqFool :: GHC.Classes.Eq Generators.Fool
+  DFunId
+8c6449be3fc5a14bb6c84c49f94facb5
+  $fEqFool' :: GHC.Classes.Eq Generators.Fool'
+  DFunId
+1eab18b03bca753f033f80866245c5fd
+  $fShowFool :: GHC.Show.Show Generators.Fool
+  DFunId
+8c6449be3fc5a14bb6c84c49f94facb5
+  $fShowFool' :: GHC.Show.Show Generators.Fool'
+  DFunId
+cbd223cfdf59e6bbe58bb7cacfdbd2a5
+  $tc'Frue :: GHC.Types.TyCon
+e2be22f25c4a1a457a4e3216cd46fc4d
+  $tc'Frue' :: GHC.Types.TyCon
+9914a5255e6ccd48ef17387b06872306
+  $tc'Fulse :: GHC.Types.TyCon
+54105efd3b9ec7a748b311599bab8360
+  $tc'Fulse' :: GHC.Types.TyCon
+0f038bfbb3a1bcf554596a5036e86406
+  $tcFool :: GHC.Types.TyCon
+9b1a6bfa4b4aef48870444c13f059df1
+  $tcFool' :: GHC.Types.TyCon
+4fa1c5fa5440e767798d97c6a4c478fb
+  $trModule :: GHC.Types.Module
+1eab18b03bca753f033f80866245c5fd
+  data Fool = Fulse | Frue
+8c6449be3fc5a14bb6c84c49f94facb5
+  data Fool' = Fulse' | Frue'
+5c75fed21f5d105712de25369bba84d6
+  main :: GHC.Types.IO ()
+3bd5d2186e13486c7b101a0d51d1b734
+  run_fool :: GHC.Types.IO ()
+499537369c4701b3b80ecdc8de1e11e3
+  run_fool' :: GHC.Types.IO ()
+instance [safe] Test.QuickCheck.Arbitrary.Arbitrary [Generators.Fool]
+  = Generators.$fArbitraryFool
+instance [safe] Test.QuickCheck.Arbitrary.Arbitrary [Generators.Fool']
+  = Generators.$fArbitraryFool'
+instance [safe] GHC.Classes.Eq [Generators.Fool]
+  = Generators.$fEqFool
+instance [safe] GHC.Classes.Eq [Generators.Fool']
+  = Generators.$fEqFool'
+instance [safe] GHC.Show.Show [Generators.Fool]
+  = Generators.$fShowFool
+instance [safe] GHC.Show.Show [Generators.Fool']
+  = Generators.$fShowFool'
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

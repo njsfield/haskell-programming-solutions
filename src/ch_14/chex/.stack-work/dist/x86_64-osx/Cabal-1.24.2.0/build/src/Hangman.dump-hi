@@ -1,0 +1,141 @@
+
+==================== FINAL INTERFACE ====================
+2017-08-31 14:21:33.260843 UTC
+
+interface chex-0.1.0.0-KgUEtLxuEyGCiEynp3TqoJ:Hangman 8002
+  interface hash: 2f65cfb600390e3253a194c60552dec2
+  ABI hash: e9b273c4b2f77259d1a7cdd20363b4d8
+  export-list hash: b0141c382a08c6f4a24c8e15d87bd7e3
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Hangman.allWords
+  Hangman.alreadyGuessed
+  Hangman.charInWord
+  Hangman.fillInCharacter
+  Hangman.freshPuzzle
+  Hangman.gameOver
+  Hangman.gameWin
+  Hangman.gameWords
+  Hangman.handleGuess
+  Hangman.main
+  Hangman.maxWordLength
+  Hangman.minWordLength
+  Hangman.randomWord
+  Hangman.randomWord'
+  Hangman.renderPuzzleChar
+  Hangman.runGame
+  Hangman.Puzzle{Hangman.Puzzle}
+  Hangman.WordList{Hangman.WordList}
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog*
+                      time-1.6.0.1@time-1.6.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Control.Monad a6784c5dab0d75c63dabec5a37843f98
+import  -/  base-4.9.1.0:Data.Char 01433d23661edb6e5ef1536ef1e6774c
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
+import  -/  base-4.9.1.0:Data.Maybe d876c4ffe4b3c43755a781e8ad860d88
+import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:GHC.Unicode a175ecf20bf1272d9ae31337e7da43ab
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.Exit 068ba078eb20417d7af66db8b8ab4db1
+import  -/  base-4.9.1.0:System.IO c9de64c5f5407c4cf1c52500c4d15200
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog:System.Random cc3ef358c669b194cf9fe94db6f2430f
+c319668797a6073b38742aec6f1532f5
+  $fEqWordList :: GHC.Classes.Eq Hangman.WordList
+  DFunId
+2fba480d8b36851d93badeaa11fea5c0
+  $fShowPuzzle :: GHC.Show.Show Hangman.Puzzle
+  DFunId
+c319668797a6073b38742aec6f1532f5
+  $fShowWordList :: GHC.Show.Show Hangman.WordList
+  DFunId
+f97f6c262615633883598af050ae7e82
+  $tc'Puzzle :: GHC.Types.TyCon
+75e4a22751ff017d697c3105cca182f2
+  $tc'WordList :: GHC.Types.TyCon
+2fe471914f8d6162149f67db732050e2
+  $tcPuzzle :: GHC.Types.TyCon
+6cabc574fc7241d0c2911892c30c76d0
+  $tcWordList :: GHC.Types.TyCon
+09733c23e3d55e19c487a87128e57df3
+  $trModule :: GHC.Types.Module
+2fba480d8b36851d93badeaa11fea5c0
+  data Puzzle
+    = Puzzle GHC.Base.String
+             [GHC.Base.Maybe GHC.Types.Char]
+             [GHC.Types.Char]
+c319668797a6073b38742aec6f1532f5
+  newtype WordList = WordList [GHC.Base.String]
+71bc977ac53a769148c82ad21caddf28
+  allWords :: GHC.Types.IO Hangman.WordList
+9045d0217506b211e962682da0ee1687
+  alreadyGuessed ::
+    Hangman.Puzzle -> GHC.Types.Char -> GHC.Types.Bool
+7bec943d44c25afc4e7a781ae36ee886
+  charInWord :: Hangman.Puzzle -> GHC.Types.Char -> GHC.Types.Bool
+a177aa2296d447bf60b7550f0976e963
+  fillInCharacter ::
+    Hangman.Puzzle -> GHC.Types.Char -> Hangman.Puzzle
+237dea6dfd46affab9e15134282154be
+  freshPuzzle :: GHC.Base.String -> Hangman.Puzzle
+a8415d9fa319ac603353db952feb8a27
+  gameOver :: Hangman.Puzzle -> GHC.Types.IO ()
+cf4f1b867c7d2242ed1a4ff9d49a5270
+  gameWin :: Hangman.Puzzle -> GHC.Types.IO ()
+2c124baeb690e609869479002180604f
+  gameWords :: GHC.Types.IO Hangman.WordList
+4ae745e164c4e11ccd370949a4206207
+  handleGuess ::
+    Hangman.Puzzle -> GHC.Types.Char -> GHC.Types.IO Hangman.Puzzle
+42c97238a07ce9cf6c9490740455e097
+  main :: GHC.Types.IO ()
+389a736bba3b0521a91cdee582ab26a6
+  maxWordLength :: GHC.Types.Int
+85a9a9e408317cd19b5c53378732dcbd
+  minWordLength :: GHC.Types.Int
+47cfda7fb41d1370e46f0bbd03ae9bee
+  randomWord :: Hangman.WordList -> GHC.Types.IO GHC.Base.String
+32f2a2bca535ed427af98816961b3050
+  randomWord' :: GHC.Types.IO GHC.Base.String
+b923c639fbf0a526b538e1157af46ccb
+  renderPuzzleChar :: GHC.Base.Maybe GHC.Types.Char -> GHC.Types.Char
+6c9a1268bfe3054f3da10ce24834eb75
+  runGame :: Hangman.Puzzle -> GHC.Types.IO ()
+instance [safe] GHC.Classes.Eq [Hangman.WordList]
+  = Hangman.$fEqWordList
+instance [safe] GHC.Show.Show [Hangman.Puzzle]
+  = Hangman.$fShowPuzzle
+instance [safe] GHC.Show.Show [Hangman.WordList]
+  = Hangman.$fShowWordList
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
