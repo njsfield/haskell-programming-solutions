@@ -1,6 +1,6 @@
-name:                haskell_programming_solutions
+name:                haskell-programming-solutions
 version:             0.1.0.0
-homepage:            https://github.com/njsfield/haskell_programming_solutions#readme
+homepage:            https://github.com/njsfield/haskell-programming-solutions#readme
 license:             BSD3
 license-file:        LICENSE
 author:              Nick Field
@@ -23,4 +23,4 @@ library
 
 source-repository head
   type:     git
-  location: https://github.com/githubuser/haskell-book-solutions
+  location: https://github.com/njsfield/haskell-programming-solutions
