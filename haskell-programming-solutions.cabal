@@ -18,8 +18,12 @@ library
                      , QuickCheck
                      , random
                      , containers
-                     , scotty
   default-language:    Haskell2010
+  exposed-modules:     Ch09.Caesar
+                     , Ch11.Vigenere
+                     , Ch13.Hangman
+                     , Ch14.Morse
+                     , Utils
 
 source-repository head
   type:     git

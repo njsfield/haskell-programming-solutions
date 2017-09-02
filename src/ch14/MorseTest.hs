@@ -1,7 +1,7 @@
 module Ch14.MorseTest where
 
 import qualified Data.Map as M
-import Ch14.Morse
+import Morse
 import Test.QuickCheck
 
 allowedChars :: [Char]
