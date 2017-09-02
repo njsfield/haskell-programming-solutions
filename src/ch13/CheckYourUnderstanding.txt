@@ -1,0 +1,18 @@
+Check Your Understanding
+========================
+
+1) forever and when
+
+2) Data.Bits and Database.Blacktip.Types
+
+3) Data Types 
+
+4)
+
+a) MV  == Control.Concurrent.MVar
+   FPC == Filesystem.Path.CurrentOS
+   CC  == Control.Concurrent
+
+b) Filesystem 
+
+c) Control.Monad
