@@ -23,6 +23,8 @@ library
                      , Ch11.Vigenere
                      , Ch13.Hangman
                      , Ch14.Morse
+                     , Ch15.Optional
+                     , Ch15.QuickChecking
                      , Utils
 
 source-repository head

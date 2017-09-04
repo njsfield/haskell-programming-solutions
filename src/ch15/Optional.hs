@@ -1,10 +1,12 @@
 module Ch15.Optional where
 
 import Data.Monoid
+import Test.QuickCheck
 
 {-
  - Optional Monoid
  -}
+
 data Optional a
   = Nada
   | Only a
@@ -16,6 +18,20 @@ instance Monoid a => Monoid (Optional a) where
   mappend (Only a) Nada     = Only a
   mappend Nada (Only a)     = Only a
   mappend (Only a) (Only b) = Only (a <> b)
+
+genOnly :: Arbitrary a => Gen (Optional a)
+genOnly = do
+  a <- arbitrary
+  return (Only a)
+
+genOptional :: (Arbitrary a) => Gen (Optional a)
+genOptional =
+  frequency [ (1, return Nada)
+            , (1, genOnly)
+            ]
+
+instance Arbitrary a => Arbitrary (Optional a) where
+  arbitrary = genOptional
 
 main :: IO ()
 main
