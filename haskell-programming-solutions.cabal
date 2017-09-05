@@ -25,6 +25,7 @@ library
                      , Ch14.Morse
                      , Ch15.Optional
                      , Ch15.QuickChecking
+                     , Ch15.Semigroups
                      , Utils
 
 source-repository head
