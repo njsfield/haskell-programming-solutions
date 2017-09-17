@@ -1,0 +1,23 @@
+Be Kind
+=======
+
+1) What's the kind of a?
+  
+   a -> a
+
+   a's kind is *
+
+
+2) What are the kinds of b and T?
+
+   a -> b a -> T (b a)
+
+   b's kind is * -> *
+   T's kind is * -> *
+
+3) What's the kind of c?
+
+   c a b -> c b a
+
+   c's kind is * -> * -> *
+

@@ -1,0 +1,20 @@
+Composing Functors
+==================
+
+(.) :: (b -> c) -> (a -> b) -> a -> c
+
+fmap :: Functor f => (m -> n) -> f m -> f n
+fmap :: Functor g => (x -> y) -> g x -> g y
+
+End Result
+----------
+
+(fmap . fmap) :: (Functor f, Functor g) => (a -> b) -> g (f a) -> g (f b)
+
+-----------------------------
+
+(fmap . fmap) :: (Functor f, Functor g) => (a -> b) -> g (f a) -> g (f b)
+(fmap . fmap) :: (functor f, List) => (a -> b) -> List (f a) -> List (f b)
+(fmap . fmap) :: (Maybe, List) => (a -> b) -> List (Maybe String) -> List (Maybe String)
+(fmap . fmap) :: (Maybe, List) => replaceWithP -> List (Maybe String) -> List (Maybe Char)
+

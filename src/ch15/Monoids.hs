@@ -93,7 +93,6 @@ instance (Monoid a, Semigroup a) => Monoid (Mem s a) where
 -- ("h1", 1)
 
 
-
 main :: IO ()
 main = do
   quickCheck (monoidAssoc :: TrivialAssoc)

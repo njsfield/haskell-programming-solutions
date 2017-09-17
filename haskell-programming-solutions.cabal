@@ -26,6 +26,7 @@ library
                      , Ch15.Optional
                      , Ch15.QuickChecking
                      , Ch15.Semigroups
+                     , Ch16.FunctorLaws
                      , Utils
 
 source-repository head
