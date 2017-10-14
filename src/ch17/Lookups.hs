@@ -1,4 +1,4 @@
-module Lookups where
+module Ch17.Lookups where
 
 import           Data.List (elemIndex)
 
