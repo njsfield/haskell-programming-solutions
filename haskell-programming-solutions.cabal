@@ -29,6 +29,7 @@ library
                      , Ch15.Semigroups
                      , Ch16.FunctorLaws
                      , Ch17.List
+                     , Ch18.ChapterExercises
                      , Utils
 
 source-repository head
