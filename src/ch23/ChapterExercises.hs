@@ -1,60 +1,57 @@
-module Ch22.ChapterExercises where
+{-# LANGUAGE InstanceSigs  #-}
+{-# LANGUAGE TupleSections #-}
 
-import           Control.Applicative
-import           Data.Maybe
+module Ch23.ChapterExercises where
 
-x = [1, 2, 3]
-y = [4, 5, 6]
-z = [7, 8, 9]
+import           Control.Arrow (first)
 
-xs :: Maybe Integer
-xs = lookup 3 $ zip x y
+newtype Moi s a =
+  Moi { runMoi :: s -> (a, s) }
 
-ys :: Maybe Integer
-ys = lookup 6 $ zip y z
+instance Functor (Moi s) where
+  fmap :: (a -> b) -> Moi s a -> Moi s b
+  fmap f (Moi g) = Moi (first f . g)
 
-zs :: Maybe Integer
-zs = lookup 4 $ zip x y
+instance Applicative (Moi s) where
+  pure :: a -> Moi s a
+  pure a = Moi (a, )
 
-z' :: Integer -> Maybe Integer
-z' n = lookup n $ zip x z
+  (<*>) :: Moi s (a -> b)
+        -> Moi s a
+        -> Moi s b
 
-x1 :: Maybe (Integer, Integer)
-x1 = (,) <$> xs <*> ys
---   (,)  <$> Just 6 <*> Just 9
---   fmap (,) Just 6 <*> Just 9
---      Just (6,)    <*> Just 9
---                   Just (6,9)
+-- Moi f = Moi (s -> (a -> b, s))
+-- Moi g = Moi (s -> (a, s))
+  Moi f <*> Moi g = Moi (\s ->
+                        let (ab, s') = f s
+                            (a, s'') = g s'
+                        in  (ab a, s''))
 
-x2 :: Maybe (Integer, Integer)
-x2 = (,) <$> ys <*> zs
--- Nothing
+instance Monad (Moi s) where
+  return = pure
+  (>>=) :: Moi s a
+        -> (a -> Moi s b)
+        -> Moi s b
+  (Moi f) >>= g = Moi (\s ->
+                  let (a, s') = f s
+                  in runMoi (g a) s')
 
-x3 :: Integer -> (Maybe Integer, Maybe Integer)
-x3 n = (z' n,z' n)
+-- 1)
+get :: Moi s s
+get = Moi (\s -> (s,s))
 
-summed :: Num c => (c,c) -> c
-summed = uncurry (+)
+-- 2)
+put :: s -> Moi s ()
+put s = Moi (\s -> ((),s))
 
-bolt :: Integer -> Bool
-bolt = liftA2 (&&) (>3) (<8)
+-- 3)
+exec :: Moi s a -> s -> s
+exec (Moi sa) s = snd (sa s)
 
-sequA :: Integral a => a -> [Bool]
-sequA = sequenceA [(>3), (<8), even]
+-- 4)
+eval :: Moi s a -> s -> a
+eval (Moi sa) s = fst (sa s)
 
-s' :: Maybe Integer
-s' = summed <$> ((,) <$> xs <*> ys)
-
-main :: IO ()
-main = do
-  print $ sequenceA [Just 3, Just 2, Just 1]
-  print $ sequenceA [x, y]
-  print $ sequenceA [xs, ys]
-  print $ summed <$> ((,) <$> xs <*> ys)
-  print $ fmap summed ((,) <$> xs <*> zs)
-  print $ bolt 7
-  print $ fmap bolt z
-  print $ sequenceA [(>3), (<8), even] 7
-  print $ and . sequA $ 3
-  print $ sequA $ fromMaybe 0 s'
-  print $ sequA $ fromMaybe 0 ys
+-- 5)
+modify :: (s -> s) -> Moi s ()
+modify f = Moi (\s -> ((), f s))
