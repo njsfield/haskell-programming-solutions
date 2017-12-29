@@ -21,6 +21,8 @@ library
                      , containers
                      , bytestring
                      , text
+                     , trifecta
+                     , parsers
                      , hedis
                      , scotty
                      , network-uri
