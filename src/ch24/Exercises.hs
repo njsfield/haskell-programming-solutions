@@ -39,6 +39,16 @@ intParser = do
   i <- integer
   eof >>= const (return i)
 
+-- Parse single digit (as char)
+parseDigit :: Parser Char
+parseDigit = oneOf "0123456789"
+
+-- Parse pos/negative integer
+base10Integer :: Parser Integer
+base10Integer = do
+  s <- option ' ' (char '-')
+  (read . (++) [s] <$> some parseDigit) <?> "integer"
+
 main = do
   print $ parseString stop mempty "123"
   print $ parseString one mempty "123"
@@ -49,3 +59,8 @@ main = do
   print $ parseString (stringParser "12") mempty "123"
   print $ parseString (stringParser "123") mempty "123"
   print $ parseString intParser mempty "123"
+  print $ parseString parseDigit mempty "123"
+  print $ parseString parseDigit mempty "abc"
+  print $ parseString base10Integer mempty "123abc"
+  print $ parseString base10Integer mempty "-123abc"
+  print $ parseString base10Integer mempty "abc"
