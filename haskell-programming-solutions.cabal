@@ -26,6 +26,8 @@ library
                      , hedis
                      , scotty
                      , network-uri
+                     , raw-strings-qq
+                     , time
                      , mtl
                      , dlist
                      , transformers
