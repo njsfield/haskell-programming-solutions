@@ -10,6 +10,7 @@ import qualified Data.Map                   as M
 import           Data.Maybe                 (fromMaybe)
 import           Data.Text.Lazy             (Text)
 import qualified Data.Text.Lazy             as TL
+import Data.Text.Lazy.Builder (fromString, toLazyText)
 import           System.Environment         (getArgs)
 import           Web.Scotty.Trans
 
@@ -55,7 +56,8 @@ app =
 
 main :: IO ()
 main = do
+  [prefix] <- getArgs
   counter <- newIORef M.empty
-  let config = Config counter "-"
+  let config = Config counter (toLazyText . fromString $ prefix)
       runR r = runReaderT r config
   scottyT 3000 runR app
