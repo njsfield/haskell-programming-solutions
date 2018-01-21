@@ -21,6 +21,7 @@ library
                      , containers
                      , bytestring
                      , text
+                     , either
                      , trifecta
                      , parsers
                      , hedis
